@@ -5,3 +5,5 @@ FROM amazoncorretto:17-alpine-jdk
 ARG JAR_FILE=build/libs/*-SNAPSHOT.jar
 COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java", "-jar", "/app.jar"]
+
+# docker로 빌드만 하면 한꺼번에 실행이 되어있어야 한다! 
