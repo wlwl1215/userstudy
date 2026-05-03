@@ -1,8 +1,12 @@
-package com.example.userstudy;
+package com.example.userstudy.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.example.userstudy.Member;
+import com.example.userstudy.service.MemberService;
+
 import java.util.List;
 
 @RestController

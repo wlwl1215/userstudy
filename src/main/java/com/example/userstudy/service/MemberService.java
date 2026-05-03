@@ -1,7 +1,11 @@
-package com.example.userstudy;
+package com.example.userstudy.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
+import com.example.userstudy.Member;
+import com.example.userstudy.repository.MemberRepository;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -14,7 +18,7 @@ public class MemberService {
         return repository.save(member);
     }
 
-    
+
     public List<Member> findAll() {
         return repository.findAll();
     }
